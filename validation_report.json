@@ -1,0 +1,236 @@
+{
+  "total_checks": 49,
+  "passed_checks": 36,
+  "errors": [
+    "Backend missing: Dynamic_Schema",
+    "Backend missing: Session_Management",
+    "Missing API endpoint: /chat",
+    "Missing API endpoint: /sessions",
+    "Missing API endpoint: /schemas",
+    "Missing API endpoint: /upload",
+    "Frontend missing: Checklist_View",
+    "Frontend missing: File_Upload",
+    "Session log session_log_1_design_challenge__mobile_app_ui.json missing fields: ['conversation', 'final_spec', 'reasoning_trace']",
+    "Session log session_log_2_development_challenge__api_backend.json missing fields: ['conversation', 'final_spec', 'reasoning_trace']",
+    "Session log session_log_3_innovation_challenge__sustainability.json missing fields: ['conversation', 'final_spec', 'reasoning_trace']",
+    "Missing Python package: langgraph",
+    "Missing Python package: python-multipart"
+  ],
+  "warnings": [],
+  "results": {
+    "file_structure": {
+      "backend/main.py": {
+        "status": "\u2705 PASS",
+        "details": "File exists: /home/Arun/Desktop/Hack/Top_coder_backend/backend/main.py"
+      },
+      "backend/requirements.txt": {
+        "status": "\u2705 PASS",
+        "details": "File exists: /home/Arun/Desktop/Hack/Top_coder_backend/backend/requirements.txt"
+      },
+      "frontend/src/App.tsx": {
+        "status": "\u2705 PASS",
+        "details": "File exists: /home/Arun/Desktop/Hack/Top_coder_backend/frontend/src/App.tsx"
+      },
+      "frontend/package.json": {
+        "status": "\u2705 PASS",
+        "details": "File exists: /home/Arun/Desktop/Hack/Top_coder_backend/frontend/package.json"
+      },
+      "README.md": {
+        "status": "\u2705 PASS",
+        "details": "File exists: /home/Arun/Desktop/Hack/Top_coder_backend/README.md"
+      },
+      "session_log_1_design_challenge__mobile_app_ui.json": {
+        "status": "\u2705 PASS",
+        "details": "File exists: /home/Arun/Desktop/Hack/Top_coder_backend/session_log_1_design_challenge__mobile_app_ui.json"
+      },
+      "session_log_2_development_challenge__api_backend.json": {
+        "status": "\u2705 PASS",
+        "details": "File exists: /home/Arun/Desktop/Hack/Top_coder_backend/session_log_2_development_challenge__api_backend.json"
+      },
+      "session_log_3_innovation_challenge__sustainability.json": {
+        "status": "\u2705 PASS",
+        "details": "File exists: /home/Arun/Desktop/Hack/Top_coder_backend/session_log_3_innovation_challenge__sustainability.json"
+      }
+    },
+    "backend": {
+      "FastAPI": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      },
+      "LangGraph": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      },
+      "RAG_Integration": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      },
+      "Dynamic_Schema": {
+        "status": "\u274c FAIL",
+        "details": "Found in code: False"
+      },
+      "Session_Management": {
+        "status": "\u274c FAIL",
+        "details": "Found in code: False"
+      },
+      "Reasoning_Trace": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      },
+      "Feedback_Loop": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      },
+      "Vision_Support": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      },
+      "CORS_Middleware": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      }
+    },
+    "backend_endpoints": {
+      "/chat": {
+        "status": "\u274c FAIL",
+        "details": "Endpoint missing"
+      },
+      "/sessions": {
+        "status": "\u274c FAIL",
+        "details": "Endpoint missing"
+      },
+      "/schemas": {
+        "status": "\u274c FAIL",
+        "details": "Endpoint missing"
+      },
+      "/upload": {
+        "status": "\u274c FAIL",
+        "details": "Endpoint missing"
+      }
+    },
+    "frontend": {
+      "Chat_Interface": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      },
+      "Checklist_View": {
+        "status": "\u274c FAIL",
+        "details": "Found in code: False"
+      },
+      "Challenge_Spec_Viewer": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      },
+      "File_Upload": {
+        "status": "\u274c FAIL",
+        "details": "Found in code: False"
+      },
+      "React_Hooks": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      },
+      "TypeScript": {
+        "status": "\u2705 PASS",
+        "details": "Found in code: True"
+      }
+    },
+    "session_logs": {
+      "session_log_1_design_challenge__mobile_app_ui.json": {
+        "status": "\u274c FAIL",
+        "details": "Missing fields: ['conversation', 'final_spec', 'reasoning_trace']"
+      },
+      "session_log_2_development_challenge__api_backend.json": {
+        "status": "\u274c FAIL",
+        "details": "Missing fields: ['conversation', 'final_spec', 'reasoning_trace']"
+      },
+      "session_log_3_innovation_challenge__sustainability.json": {
+        "status": "\u274c FAIL",
+        "details": "Missing fields: ['conversation', 'final_spec', 'reasoning_trace']"
+      }
+    },
+    "backend_requirements": {
+      "fastapi": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "uvicorn": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "openai": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "langgraph": {
+        "status": "\u274c FAIL",
+        "details": "Found: False"
+      },
+      "langchain": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "pydantic": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "python-multipart": {
+        "status": "\u274c FAIL",
+        "details": "Found: False"
+      }
+    },
+    "frontend_requirements": {
+      "react": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "typescript": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "vite": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "tailwindcss": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      }
+    },
+    "documentation": {
+      "agent_orchestration": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "memory_handling": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "prompt_strategies": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "schema_configurability": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "setup_instructions": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "tech_stack": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      }
+    },
+    "bonus_features": {
+      "vision_model_support": {
+        "status": "\u2705 PASS",
+        "details": "Found: True"
+      },
+      "react_frontend": {
+        "status": "\u2705 PASS",
+        "details": "React frontend implemented"
+      }
+    }
+  }
+}

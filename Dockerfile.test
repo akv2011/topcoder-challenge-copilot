@@ -1,0 +1,36 @@
+# Test Dockerfile with fixed requirements
+FROM python:3.10-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy test requirements
+COPY backend/requirements_test.txt ./requirements.txt
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Test imports
+RUN python -c "import fastapi; print('✅ FastAPI OK')"
+RUN python -c "import uvicorn; print('✅ Uvicorn OK')"
+RUN python -c "import openai; print('✅ OpenAI OK')"
+RUN python -c "import langchain; print('✅ LangChain OK')"
+RUN python -c "import langchain_community; print('✅ LangChain Community OK')"
+RUN python -c "import langgraph; print('✅ LangGraph OK')"
+RUN python -c "import faiss; print('✅ FAISS OK')"
+RUN python -c "import sentence_transformers; print('✅ Sentence Transformers OK')"
+
+# Copy minimal test app
+COPY test_app.py .
+
+# Expose port
+EXPOSE 8000
+
+# Command to run test
+CMD ["python", "test_app.py"]

@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-06-10 16:04:06",
+  "success_rate": 100.0,
+  "total_tests": 7,
+  "successful_tests": 7,
+  "test_results": {
+    "GET_/health": {
+      "status": 200,
+      "success": true
+    },
+    "GET_/": {
+      "status": 200,
+      "success": true
+    },
+    "GET_/sessions": {
+      "status": 200,
+      "success": true
+    },
+    "GET_/schemas/topcoder/design": {
+      "status": 200,
+      "success": true
+    },
+    "POST_/sessions": {
+      "status": 200,
+      "success": true
+    },
+    "rag_functionality": {
+      "success": true,
+      "results_count": 1
+    },
+    "file_upload": {
+      "success": true,
+      "response": {
+        "message": "File uploaded successfully",
+        "session_id": "test_session",
+        "filename": "test_image.jpg",
+        "file_size": 18,
+        "content_type": "image/jpeg",
+        "status": "processed"
+      }
+    }
+  }
+}
